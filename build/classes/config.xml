@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+	<!-- 开发包版本，重要参数，如不了解作用，切勿修改 -->
+	<SDKVersion>2.6</SDKVersion>
+	<!-- 需要加载器加载的类(入口类)的全名 -->
+	<EntryClass>com.type.tool.action.TypeTool</EntryClass>
+	<!-- 工具配置参数 -->
+	<toolConfig>
+		{
+			"Aid":"04682185083857186679",
+			"MessageToolID":"2217851"
+		}
+	</toolConfig>
+</Config>

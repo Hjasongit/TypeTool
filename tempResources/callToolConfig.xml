@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 通过此配置调用本地开发中的工具，环境会先寻找此配置文件中的工具别名或者工具ID配置，若找到，则使用此配置文件，调用本地开发中的工具，若未找到，则调用开发平者台上的工具 -->
+<config>
+	<!-- 通过工具别名调用工具 -->
+	<callTool>
+		<!-- 工具别名 -->
+		<anotherName>javaDemoToolNoUI</anotherName>
+		<!-- 被调工具的地址 -->
+		<url>http://localhost:8080/JavaToolDemo</url>
+		<!-- 有无数据库：0、无，1、有 -->
+		<hasDB>0</hasDB>
+	</callTool>
+	<!-- 通过工具别名调用工具 -->
+	<callTool>
+		<!-- 工具别名 -->
+		<anotherName>javaDemoToolHaveUI</anotherName>
+		<!-- 被调工具的地址 -->
+		<url>http://localhost:8080/JavaToolDemo</url>
+		<!-- 有无数据库：0、无，1、有 -->
+		<hasDB>0</hasDB>
+	</callTool>
+	<!-- 通过工具ID调用工具 -->
+	<callTool>
+		<!-- 工具ID -->
+		<toolID>123</toolID>
+		<!-- 被调工具的地址 -->
+		<url>http://localhost:8080/JavaToolDemo</url>
+		<!-- 有无数据库：0、无，1、有 -->
+		<hasDB></hasDB>
+	</callTool>
+	<!-- 配置callToolAct -->
+	<callToolAct>
+		<!-- 是否调用本地开发中的工具，0、否，1、是 -->
+		<localTool>1</localTool>
+		<!-- 被调工具的地址（若非调用本地开发中的工具，则不需要设置） -->
+		<url>http://192.168.10.254:8080/JavaToolDemo</url>
+	</callToolAct>
+</config>

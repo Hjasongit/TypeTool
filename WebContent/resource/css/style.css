@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #DDD;
+    height: 100%;
+    width: 100%;
+}
+li {
+    list-style: none;
+}
+table {
+    width: 100%;
+    height: 100%;
+}
+
+
+.catagory-list {
+    position: relative;
+    width: 80%;    
+    background-color: #FFF;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2); 
+}
+.catagory-list li {
+    height: 70px;
+    line-height: 70px;
+    width: 100%;
+    padding: 0 20px;
+}
+.catagory-list li:not(:last-of-type) {
+    border-bottom: 2px solid #AAA;
+}
+.catagory-list li span {
+    float: left;
+}
+.control-buttons {
+    float: right;
+}
+.control-buttons button, .prompt-buttons button {
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: #FFF;
+    margin-left: 10px;
+}
+.check {
+    background-color: #2196F3;
+}
+.modify {
+    background-color: #A0CF67;
+}
+.delete {
+    background-color: #FF9966;
+}
+#add {
+    background-color: #2196F3;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 16px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 50px;
+    border: none;
+    color: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    cursor: pointer;
+}
+
+.catagory-information {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #FFF;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 3;
+    display: none;
+}
+#close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    background: none;
+    background-image: url('../images/close-btn.png');
+    outline: none;
+    border: none;
+    background-size: 100% 100%;
+}
+.catagory-information tr:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+.catagory-information td:nth-of-type(odd) {
+    float: left;
+}
+.catagory-information td:nth-of-type(even) {
+    float: right;
+    max-width: 200px;
+    text-align: left;
+}
+
+.catagory-modify {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #FFF;
+    padding: 40px;
+    border-radius: 10px;
+    z-index: 3;
+    display: none;
+}
+.catagory-modify input {
+    border: 1px solid #2196F3;
+    height: 30px;
+    padding: 0 10px;
+    line-height: 30px;
+    width: 220px;
+}
+.catagory-modify input:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+.catagory-modify button[type=submit] {
+    display: block;
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: #FFF;
+    background-color: #2196F3;
+    margin: 20px auto 0 auto;
+}
+
+
+.delete-prompt {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    background-color: #FFF;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 3;
+    display: none;
+}
+.delete-prompt p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.prompt-buttons {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#yes {
+    background-color: #FF9966;
+}
+#no {
+    background-color: #A0CF67;
+}
+
+.catagory-add {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #FFF;
+    padding: 40px;
+    border-radius: 10px;
+    z-index: 3; 
+    display: none;
+}
+.catagory-add input {
+    border: 1px solid #2196F3;
+    height: 30px;
+    padding: 0 10px;
+    line-height: 30px;
+    width: 220px;
+}
+.catagory-add input:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+.catagory-add button[type=submit] {
+    display: block;
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: #FFF;
+    background-color: #2196F3;
+    margin: 20px auto 0 auto;
+}
+
+.cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 2;
+    display: none;
+}
